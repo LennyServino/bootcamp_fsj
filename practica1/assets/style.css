@@ -39,6 +39,19 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+    margin-bottom: 6rem;
+}
+
+.seccion-restaurante::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor de opacidad según tus necesidades */
+    z-index: 1; /* Asegura que la capa oscura esté por encima de la imagen de fondo */
 }
 
 .titulo{
@@ -47,6 +60,7 @@ nav ul li{
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: var(--blanco);
+    z-index: 1;
 }
 
 .subtitulo{
@@ -54,6 +68,7 @@ nav ul li{
     letter-spacing: .7rem;
     font-weight: 400;
     color: var(--blanco);
+    z-index: 1;
 }
 
 .caja{
