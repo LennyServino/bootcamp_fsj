@@ -83,6 +83,11 @@ nav ul li{
     flex-flow: row wrap;
 }
 
+.nosotros-imagen img{
+    width: 400px;
+    height: 400px;
+}
+
 footer {
     background-color: #333;
     color: white;
