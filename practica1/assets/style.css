@@ -10,6 +10,7 @@
     padding: 0;
     /* manejamos que las cajas no se sobrepasen del contenedor */
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -83,9 +84,172 @@ nav ul li{
     flex-flow: row wrap;
 }
 
+.nosotros-contenido {
+    flex: 0 0 50%;
+}
+
+.caja h2{
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4{
+    font-size: 1rem;
+    color: #444;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+span{
+    color: var(--color-primario);
+    text-transform: uppercase;
+}
+
+.nosotros-contenido p{
+    line-height: 3rem;
+    color: #666;
+}
+
+.nosotros-imagen{
+    position: relative;
+    /* 
+        combina propiedades
+        flex-grow: definimos la capacidad de como crece el elemento
+
+        flex-shrink: define la capacidad de como encoger el elemento
+
+        flex-basis: define el tamaño del elemento
+     */
+    flex: 0 0 400px;
+}
+
 .nosotros-imagen img{
-    width: 400px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;/* para que la imagen se adapte al tamaño del contendor */
+    box-shadow: 0 0 10px 2px var(--color-secundario);
+    transition: all .3s;
+
+    /* anidamos el efecto hover */
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.seccion-ofertas{
+    background-image: url("https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/image3_ulstmf.jpg");
+    background-size: cover;
+    width: 100%;
     height: 400px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin-top: 6rem;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+}
+
+
+.btn{
+    position: relative;
+    margin-top: .5rem;
+    padding: .6rem 1.7rem;
+    border-radius: 10px;
+    border: none;
+    color: var(--blanco);
+}
+
+.btn-ordenar{
+    background-color: var(--color-primario);
+}
+
+/* APARTADO MENU */
+.menu-hamburguesa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.menu-tarjeta{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.menu-tarjeta:nth-child(1){
+    background-image: url("https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574754/practicas/hamburguesa/product1_loak4u.jpg");
+}
+
+.menu-tarjeta:nth-child(2){
+    background-image: url("https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/product2_sgcwng.jpg");
+}
+
+.menu-tarjeta:nth-child(3){
+    background-image: url("https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/product3_rhoyoi.jpg");
+}
+
+.menu-tarjeta:nth-child(4){
+    background-image: url("https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574754/practicas/hamburguesa/product4_vwkcmh.jpg");
+}
+
+.menu-tarjeta:nth-child(5){
+    background-image: url("https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574754/practicas/hamburguesa/product5_ugbrat.jpg");
+}
+
+.menu-tarjeta:nth-child(6){
+    background-image: url("https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574754/practicas/hamburguesa/product6_f6gyfk.jpg");
+}
+
+.tarjeta{
+    transition: all .5s;
+    opacity: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--blanco);
+        opacity: 1;
+    }
+}
+
+.tarjeta h5{
+    font-size: 1.2rem;
+}
+
+.tarjeta .btn{
+    background-color: var(--color-primario);
+}
+
+.seccion-menu{
+    margin:6rem auto;
+    width: 80%;
+}
+
+.seccion-menu h2{
+    text-align: center;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
 }
 
 footer {
@@ -100,6 +264,14 @@ footer {
     align-items: center;
     margin: 0 auto;
     padding: 0 20px;
+    width: 80%;
+}
+
+.footer-logo, .footer-nav, .footer-map{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .footer-logo img{

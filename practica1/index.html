@@ -13,20 +13,20 @@
         <nav>
             <!-- Lista desordenada -->
             <ul>
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Nosotros</a></li>
-                <li><a href="#" class="nav-link">Menu</a></li>
-                <li><a href="#" class="nav-link">contacto</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#contacto" class="nav-link">contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="seccion-restaurante">
+        <section class="seccion-restaurante" id="home">
             <h1 class="titulo">RESTAURANTE</h1>
             <h3 class="subtitulo">Experiencia a la mejor comida</h3>
         </section>
         <!-- Apartado de nosotros -->
-        <section class="seccion-nosotros caja">
+        <section class="seccion-nosotros caja" id="nosotros">
             <h2>Nosotros</h2>
             <section class="nosotros">
                 <div class="nosotros-contenido">
@@ -39,50 +39,50 @@
             </section>
         </section>
         <!-- Apartado de ofertas -->
-        <section>
-            <h2>LOS MEJORES PRODUCTOS</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <button>Ordenar Ahora</button>
+        <section class="seccion-ofertas">
+            <h2 class="titulo">LOS MEJORES PRODUCTOS</h2>
+            <p class="subtitulo">Lorem ipsum dolor sit amet.</p>
+            <button class="btn btn-ordenar">Ordenar Ahora</button>
         </section>
         <!-- Apartado de menu -->
-         <section>
+         <section class="seccion-menu" id="menu">
             <h2>Nuestro Menu</h2>
             <!-- Contenedor para el menu de hamburguesas -->
-            <section>
-                <article>
-                    <div>
+            <section class="menu-hamburguesa">
+                <article class="menu-tarjeta">
+                    <div class="tarjeta">
                         <h5>Basica</h5>
-                        <button>Ordenar Ahora</button>
+                        <button class="btn">Ordenar Ahora</button>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="menu-tarjeta">
+                    <div class="tarjeta">
                         <h5>2 X 1</h5>
-                        <button>Ordenar Ahora</button>
+                        <button class="btn">Ordenar Ahora</button>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="menu-tarjeta">
+                    <div class="tarjeta">
                         <h5>Mas vegetales</h5>
-                        <button>Ordenar Ahora</button>
+                        <button class="btn">Ordenar Ahora</button>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="menu-tarjeta">
+                    <div class="tarjeta">
                         <h5>Doble carne</h5>
-                        <button>Ordenar Ahora</button>
+                        <button class="btn">Ordenar Ahora</button>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="menu-tarjeta">
+                    <div class="tarjeta">
                         <h5>Pull Burguer</h5>
-                        <button>Ordenar Ahora</button>
+                        <button class="btn">Ordenar Ahora</button>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="menu-tarjeta">
+                    <div class="tarjeta">
                         <h5>Extra queso</h5>
-                        <button>Ordenar Ahora</button>
+                        <button class="btn">Ordenar Ahora</button>
                     </div>
                 </article>
             </section>
@@ -92,15 +92,16 @@
     <footer>
         <section class="footer-container">
             <article class="footer-logo">
-                <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/image2_fut2k2.jpg" alt="logo footer">
+                <!-- <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/image2_fut2k2.jpg" alt="logo footer"> -->
+                 <h2>aRESTAURANTE</h2>
             </article>
             <article class="footer-nav">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </article>
