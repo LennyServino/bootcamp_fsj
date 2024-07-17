@@ -40,19 +40,33 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
     margin-bottom: 6rem;
 }
 
-.seccion-restaurante::before {
+/* .seccion-restaurante::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor de opacidad según tus necesidades */
-    z-index: 1; /* Asegura que la capa oscura esté por encima de la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+} */
+
+.seccion-restaurante::before, .seccion-ofertas::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-restaurante *, .seccion-ofertas *{
+    position: relative;
 }
 
 .titulo{
@@ -61,7 +75,7 @@ nav ul li{
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: var(--blanco);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .subtitulo{
@@ -69,7 +83,7 @@ nav ul li{
     letter-spacing: .7rem;
     font-weight: 400;
     color: var(--blanco);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .caja{
@@ -151,14 +165,14 @@ span{
     margin-top: 6rem;
     position: relative;
 
-    &::before{
+    /* &::before{
         content: '';
         position: absolute;
         top: 0;
         width: 100%;
         height: 400px;
         background-color: rgba(0, 0, 0, 0.5); 
-    }
+    } */
 }
 
 
@@ -237,7 +251,7 @@ span{
     font-size: 1.2rem;
 }
 
-.tarjeta .btn{
+.btn-tarjeta{
     background-color: var(--color-primario);
 }
 
@@ -301,4 +315,51 @@ footer {
 
 .footer-map iframe{
     border: none;
+}
+
+/* USO DE MEDIA QUERY */
+@media(max-width: 576px) {
+    .titulo{
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+    }
+
+    .subtitulo{
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+    }
+
+    .seccion-ofertas h2{
+        text-align: center;
+    }
+
+    .menu-tarjeta{
+        width: 100%;
+    }
+
+    .nosotros-contenido{
+        flex: 0 0 100%;
+    }
+
+    .nosotros-imagen{
+        flex: 0 0 300px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-logo, .footer-nav, .footer-map{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media(max-width:768px){
+    .nosotros-contenido{
+        flex: 0 0 100%;
+    }
 }
