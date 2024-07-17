@@ -266,6 +266,97 @@ span{
     text-transform: uppercase;
 }
 
+.seccion-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin-bottom: 3rem;
+}
+
+.seccion-contacto h2{
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+form label {
+    position: absolute;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+#txtNombre, #txtEmail {
+    max-width: 100%;
+    margin: 0.5rem 0;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background: none;
+    border: 2px solid;
+    padding: 1.6rem 1rem;
+}
+
+#txtComentario {
+    max-width: 100%;
+    margin: 0.5rem 0;
+    padding: 1.4rem 1rem;
+    height: 6rem;
+    background: none;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+#lblNombre, #lblEmail {
+    top: 15%;
+    left: 1rem;
+    color: var(--color-primario);
+}
+
+#lblComentario {
+    top: 11%;
+    left: 1rem;
+    color: var(--color-primario);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--color-secundario);
+    font-weight: 400;
+}
+
+.btn-form{
+    display: flex;
+    justify-content: center;
+}
+
+form #enviarForm {
+    width: 25%;
+    border-radius: 0.5rem;
+    height: 3.2rem;
+    background-color: var(--color-primario);
+    color: var(--blanco);
+    font-weight: bold;
+    border: none;
+
+    &:hover{
+        background-color: var(--color-secundario);
+    border: 0px;
+    color: var(--blanco);
+    }
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -345,6 +436,10 @@ footer {
         flex: 0 0 300px;
     }
 
+    form{
+        width: 80%;
+    }
+
     .footer-container{
         flex-direction: column;
         width: 100%;
@@ -361,5 +456,31 @@ footer {
 @media(max-width:768px){
     .nosotros-contenido{
         flex: 0 0 100%;
+    }
+
+    .subtitulo{
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+    }
+
+    .seccion-ofertas h2{
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-logo, .footer-nav, .footer-map{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 3rem;
     }
 }
