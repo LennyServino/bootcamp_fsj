@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(120, 126, 130);
+    background-image: url("https://res.cloudinary.com/ddnkevlzw/image/upload/v1721348410/refuerzo%20bootcamp/agjcxvdvgwmosvghn4jz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+    background-color: rgb(16, 16, 16, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: .8rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+main{
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+main h1{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 3rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    transition: all .5s;
+
+    &:hover{
+        font-size: 5.2rem;
+        color:rgb(249, 231, 98);
+        text-shadow: 4px 4px black;
+        cursor: pointer;
+    }
+}
+
+main p{
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 1rem auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+}
