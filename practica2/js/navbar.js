@@ -6,8 +6,8 @@ const Navbar = () => {
             <p>Blog DeCafe</p>
             <nav>
                 <ul>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Cursos</a></li>
+                    <li><a href="../index.html">Nosotros</a></li>
+                    <li><a href="../pages/couses.html">Cursos</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>

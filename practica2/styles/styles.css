@@ -74,6 +74,7 @@
 
 .post img {
     max-width: 100%;
+    border-radius: .6rem;
 }
 
 .post h3{
@@ -100,6 +101,18 @@
 
 .blog-aside h2{
     margin-bottom: 1rem;
+}
+
+.post-aside{
+    background-color: #a58460;
+    padding: 3rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: .6rem;
+    transition: .25s;
+    
+    &:hover {
+        transform: translateX(.5rem);
+    }
 }
 
 .post-aside h3{
