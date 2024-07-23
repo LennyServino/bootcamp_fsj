@@ -8,7 +8,7 @@ img, picture, video, iframe, figure {
 }
 
 /* Estilos del contenido principal */
-h1 {
+.titulo-cursos {
     text-align: center;
     margin-top: 3rem;
 }
@@ -43,7 +43,7 @@ h1 {
 
 /* Media querys */
 @media screen and (max-width: 768px) {
-    h1 {
+    .titulo-cursos {
         font-size: 1.5rem;
         margin: 3rem 1rem;
     }
