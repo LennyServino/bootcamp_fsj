@@ -1,0 +1,77 @@
+:root {
+    --color-primario: #1c2230;
+    --color-secundario: #181f2b;
+    --color-botones: #44afd3;
+    --color-texto: #ffff;
+}
+
+body {
+    background-color: var(--color-primario);
+}
+
+.background-nav {
+    background-color: var(--color-primario);
+}
+
+.nav-link:hover {
+    color: var(--color-botones) !important;
+}
+
+.background-boton {
+    background-color: var(--color-botones);
+    color: var(--color-texto);
+    transition: all 1s;
+    
+    &:hover {
+        background-color: #62e0d9;
+        font-size: 1.1rem;
+    }
+}
+
+.background-started {
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+}
+
+.background-secundary {
+    background-color: var(--color-secundario);
+}
+
+.links {
+    color: #62e0d9;
+    text-decoration: none;
+    border-bottom: 1px solid #62e0d9;
+    padding-bottom: .3rem;
+    transition: color .3s;
+
+    &:hover {
+        color: var(--color-botones);
+    }
+}
+
+.background-testimonial {
+    background-image: url('../images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.background-testimonial-item {
+    background-color: #21293c;
+}
+
+.testimonial-block {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-block {
+        width: 100%;
+    }
+
+    .background-testimonial {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
