@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5 JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        select, button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tienda Coches</h1>
+    <label for="coche">Selecciona un modelo:</label>
+    <select id="coche">
+        <option value="FORD FIESTA">FORD FIESTA</option>
+        <option value="FORD FOCUS">FORD FOCUS</option>
+        <option value="FORD ESCAPE">FORD ESCAPE</option>
+    </select>
+    <button type="button" onclick="calcularDescuento()">Calcular descuento</button>
+    <p id="resultado"></p>
+
+    <script src="ejercicio5.js"></script>
+</body>
+</html>
