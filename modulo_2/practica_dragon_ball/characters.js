@@ -114,7 +114,7 @@ export async function getCharactersByPlanet(planetId) {
         //llamando al contenedor para la lista de personajes
         const dragonBallContainer = document.getElementById('list-dragon-ball');
 
-        //convertir a enteros los id de los planetas
+        //convertir a enteros los id de los planetas del select
         planetId = parseInt(planetId);
 
         for (const character of items) {
