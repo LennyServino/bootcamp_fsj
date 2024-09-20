@@ -3,6 +3,7 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import sintaxisTS from './sintaxis';
 import { Estudiante } from './clases';
+import { Coach } from './herencia';
 
 //llamando a la funcion de sintaxis
 sintaxisTS();
@@ -11,6 +12,11 @@ sintaxisTS();
 let estudiante1 = new Estudiante('Lenny', 'Servino', 'lenny@gmail.com', 'sds456', 'pass123', 'fsj24');
 console.log(estudiante1);
 estudiante1.saludar();
+
+//crear couch
+let couch = new Coach('Oscar', 'Lemus', 'oscar@gmail.com', 'oscar123', '4521589', 'fsj24');
+couch.verPerfil();
+console.log(couch);
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
