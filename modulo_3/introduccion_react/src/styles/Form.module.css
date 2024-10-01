@@ -1,0 +1,11 @@
+.input {
+    margin-bottom: .5rem;
+    width: 50%;
+}
+
+.btn {
+    background-color: aquamarine;
+    border: none;
+    color: black;
+    padding: .5rem;
+}

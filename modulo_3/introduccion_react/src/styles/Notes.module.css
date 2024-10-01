@@ -1,0 +1,11 @@
+.btn {
+    background-color: brown;
+}
+
+.card_note {
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    padding: 1rem;
+    margin: 10px;
+    max-width: 300px;
+}
