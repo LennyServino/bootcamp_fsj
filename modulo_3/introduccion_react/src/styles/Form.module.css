@@ -9,3 +9,8 @@
     color: black;
     padding: .5rem;
 }
+
+.error {
+    color: red;
+    font-weight: bold;
+}
